@@ -9,7 +9,7 @@
 
 #set global $topmenu="manage"#
 #import os.path
-#include $os.path.join($sickbeard.PROG_DIR, "gui/slick/interfaces/default/inc_top.tmpl")
+#include $os.path.join($sickbeard.PROG_DIR, "gui/new/interfaces/default/inc_top.tmpl")
 #if $varExists('header') 
     <h1 class="header">$header</h1>
 #else 
@@ -62,4 +62,4 @@ Download missed subtitles for selected episodes <input class="btn" type="submit"
 
 #end if
 
-#include $os.path.join($sickbeard.PROG_DIR,"gui/slick/interfaces/default/inc_bottom.tmpl")
+#include $os.path.join($sickbeard.PROG_DIR,"gui/new/interfaces/default/inc_bottom.tmpl")
