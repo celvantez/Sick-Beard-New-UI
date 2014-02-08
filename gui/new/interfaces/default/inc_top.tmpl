@@ -9,6 +9,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<title>Sick Beard - alpha $sickbeard.version.SICKBEARD_VERSION - $title</title>
 	<!--[if lt IE 9]>
@@ -173,7 +174,7 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
 			  <li id="NAVhome" class="dropdown">
-				  	<a href="$sbRoot/home/" class="dropdown-link">Show list</a>
+				  	<a href="$sbRoot/home/" class="dropdown-link" data-toggle="dropdown">Show list</a>
 			  		<ul class="dropdown-menu">
 			  			  <li><a href="$sbRoot/home/addShows/"><img src="$sbRoot/images/menu/addshow16.png" alt="" width="16" height="16" />Add Shows</a></li>
 			  			  <li><a href="$sbRoot/home/postprocess/"><img src="$sbRoot/images/menu/postprocess16.png" alt="" width="16" height="16" />Manual Post-Processing</a></li>
@@ -182,7 +183,7 @@
 			  <li id="NAVcomingEpisodes"><a href="$sbRoot/comingEpisodes/">Coming Episodes</a></li>
 			  <li id="NAVhistory"><a href="$sbRoot/history/">History</a></li>
 			  <li id="NAVmanage" class="dropdown">
-			  	<a href="$sbRoot/manage/" class="dropdown-link">Manage</a>
+			  	<a href="$sbRoot/manage/" class="dropdown-link" data-toggle="dropdown">Manage</a>
 				  <ul class="dropdown-menu">
 						  <li><a href="$sbRoot/manage/"><img src="$sbRoot/images/menu/manage16.png" alt="" width="16" height="16" />Mass Update</a></li>
 						  <li><a href="$sbRoot/manage/backlogOverview/"><img src="$sbRoot/images/menu/backlog_view16.png" alt="" width="16" height="16" />Backlog Overview</a></li>
@@ -198,14 +199,14 @@
 				  </ul>
 			  </li>
 			  <li id="NAVerrorlogs" class="dropdown">
-			  	<a href="$sbRoot/errorlogs/" class="log dropdown-link">$logPageTitle</a>
+			  	<a href="$sbRoot/errorlogs/" class="log dropdown-link" data-toggle="dropdown">$logPageTitle</a>
 				  <ul class="dropdown-menu">
 						  <li><a href="$sbRoot/errorlogs/"><img src="$sbRoot/images/menu/viewlog_errors16.png" alt="" width="16" height="16" />View Log (Errors)</a></li>
 						  <li><a href="$sbRoot/errorlogs/viewlog/"><img src="$sbRoot/images/menu/viewlog16.png" alt="" width="16" height="16" />View Log</a></li>
 				  </ul>
 			  </li>
 			  <li id="NAVconfig">
-			  	<a href="$sbRoot/config/" class="config dropdown-link"><img src="$sbRoot/images/menu/system18.png" alt="" /></a>
+			  	<a href="$sbRoot/config/" class="config dropdown-link" data-toggle="dropdown"><img src="$sbRoot/images/menu/system18.png" alt="" /></a>
 				  <ul class="dropdown-menu">
 						  <li><a href="$sbRoot/config/"><i class="icon-question-sign" style=" margin-left: -21px;margin-right: 8px;position: absolute;"></i>Help &amp; Info</a></li>
 						  <li><a href="$sbRoot/config/general/"><img src="$sbRoot/images/menu/config16.png" alt="" width="16" height="16" />General</a></li>
