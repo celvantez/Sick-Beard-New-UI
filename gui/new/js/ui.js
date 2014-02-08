@@ -9,9 +9,9 @@
 		// If the device is a touch screen device
 		if(!!('ontouchstart' in window)){
 			$(liDropdown).click(function(){
-				if ($(liDropdown).children(dropdown).is(':visible')) {
+				if ($(this).children(dropdown).is(':visible')) {
 					window.location = $(this).children(linkLocation).attr('href');
-				}				
+				}
 			})
 		}else{ // Else, use hover
 			$(liDropdown).hover(function(){
