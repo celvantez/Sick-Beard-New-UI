@@ -176,8 +176,8 @@
 			  <li id="NAVhome" class="dropdown">
 				  	<a href="$sbRoot/home/" class="dropdown-link" data-toggle="dropdown">Show list</a>
 			  		<ul class="dropdown-menu">
-			  			  <li><a href="$sbRoot/home/addShows/"><img src="$sbRoot/images/menu/addshow16.png" alt="" width="16" height="16" />Add Shows</a></li>
-			  			  <li><a href="$sbRoot/home/postprocess/"><img src="$sbRoot/images/menu/postprocess16.png" alt="" width="16" height="16" />Manual Post-Processing</a></li>
+							<li><a href="$sbRoot/home/addShows/"><i class="fa fa-"></i>  Add Shows</a></li>
+							<li><a href="$sbRoot/home/postprocess/"><i class="fa fa-"></i>  Manual Post-Processing</a></li>
 			  	  </ul>
 			  </li>
 			  <li id="NAVcomingEpisodes"><a href="$sbRoot/comingEpisodes/">Coming Episodes</a></li>
@@ -185,36 +185,38 @@
 			  <li id="NAVmanage" class="dropdown">
 			  	<a href="$sbRoot/manage/" class="dropdown-link" data-toggle="dropdown">Manage</a>
 				  <ul class="dropdown-menu">
-						  <li><a href="$sbRoot/manage/"><img src="$sbRoot/images/menu/manage16.png" alt="" width="16" height="16" />Mass Update</a></li>
-						  <li><a href="$sbRoot/manage/backlogOverview/"><img src="$sbRoot/images/menu/backlog_view16.png" alt="" width="16" height="16" />Backlog Overview</a></li>
-						  <li><a href="$sbRoot/manage/manageSearches/"><img src="$sbRoot/images/menu/managesearches16.png" alt="" width="16" height="16" />Manage Searches</a></li>
-						  #if $sickbeard.USE_TORRENTS and $sickbeard.TORRENT_METHOD != 'blackhole':
-							<li><a href="$sbRoot/manage/manageTorrents/"><img src="$sbRoot/images/menu/bittorrent.png" alt="" width="16" height="16" />Manage Torrents</a></li>
+						  <li><a href="$sbRoot/manage/"><i class="fa fa-refresh"></i>  Mass Update</a></li>
+						  <li><a href="$sbRoot/manage/backlogOverview/"><i class="fa fa-bar-chart-o"></i>  Backlog Overview</a></li>
+						  <li><a href="$sbRoot/manage/manageSearches/"><i class="fa fa-search"></i>  Manage Searches</a></li>
+							<li><a href="$sbRoot/manage/manageTorrents/"><i class="fa fa-sitemap"></i>  Manage Torrents</a></li>
+<!-- 						  #if $sickbeard.USE_TORRENTS and $sickbeard.TORRENT_METHOD != 'blackhole':
 						  #end if
-						  <li><a href="$sbRoot/manage/failedDownloads/"><img src="$sbRoot/images/menu/failed_download.png" alt="" width="16" height="16" />Failed Downloads</a></li>
-						  <li><a href="$sbRoot/manage/episodeStatuses/"><img src="$sbRoot/images/menu/backlog16.png" alt="" width="16" height="16" />Episode Status Management</a></li>
-						  #if $sickbeard.USE_SUBTITLES:
-							<li><a href="$sbRoot/manage/subtitleMissed/"><img src="$sbRoot/images/menu/backlog16.png" alt="" width="16" height="16" />Missed Subtitle Management</a></li>
+ -->
+						  <li><a href="$sbRoot/manage/failedDownloads/"><i class="fa fa-exclamation-triangle"></i>  Failed Downloads</a></li>
+						  <li><a href="$sbRoot/manage/episodeStatuses/"><i class="fa fa-exchange"></i>  Episode Status Management</a></li>
+							<li><a href="$sbRoot/manage/subtitleMissed/"><i class="fa fa-film"></i>  Missed Subtitle Management</a></li>
+<!-- 						  #if $sickbeard.USE_SUBTITLES:
+
 						  #end if
-				  </ul>
+ -->				  </ul>
 			  </li>
 			  <li id="NAVerrorlogs" class="dropdown">
 			  	<a href="$sbRoot/errorlogs/" class="log dropdown-link" data-toggle="dropdown">$logPageTitle</a>
 				  <ul class="dropdown-menu">
-						  <li><a href="$sbRoot/errorlogs/"><img src="$sbRoot/images/menu/viewlog_errors16.png" alt="" width="16" height="16" />View Log (Errors)</a></li>
-						  <li><a href="$sbRoot/errorlogs/viewlog/"><img src="$sbRoot/images/menu/viewlog16.png" alt="" width="16" height="16" />View Log</a></li>
+						<li><a href="$sbRoot/errorlogs/"><i class="fa fa-exclamation-circle"></i>  View Log (Errors)</a></li>
+						<li><a href="$sbRoot/errorlogs/viewlog/"><i class="fa fa-folder-open"></i>  View Log</a></li>
 				  </ul>
 			  </li>
-			  <li id="NAVconfig">
-			  	<a href="$sbRoot/config/" class="config dropdown-link" data-toggle="dropdown"><img src="$sbRoot/images/menu/system18.png" alt="" /></a>
+			  <li id="NAVconfig" class="dropdown">
+			  	<a href="$sbRoot/config/" class="config dropdown-link" data-toggle="dropdown"></a>
 				  <ul class="dropdown-menu">
-						  <li><a href="$sbRoot/config/"><i class="icon-question-sign" style=" margin-left: -21px;margin-right: 8px;position: absolute;"></i>Help &amp; Info</a></li>
-						  <li><a href="$sbRoot/config/general/"><img src="$sbRoot/images/menu/config16.png" alt="" width="16" height="16" />General</a></li>
-						  <li><a href="$sbRoot/config/search/"><img src="$sbRoot/images/menu/config16.png" alt="" width="16" height="16" />Search Settings</a></li>
-						  <li><a href="$sbRoot/config/providers/"><img src="$sbRoot/images/menu/config16.png" alt="" width="16" height="16" />Search Providers</a></li>
-						  <li><a href="$sbRoot/config/subtitles/"><img src="$sbRoot/images/menu/config16.png" alt="" width="16" height="16" />Subtitles Settings</a></li>
-						  <li><a href="$sbRoot/config/postProcessing/"><img src="$sbRoot/images/menu/config16.png" alt="" width="16" height="16" />Post Processing</a></li>
-						  <li><a href="$sbRoot/config/notifications/"><img src="$sbRoot/images/menu/config16.png" alt="" width="16" height="16" />Notifications</a></li>
+						<li><a href="$sbRoot/config/"><i class="fa fa-"></i>  Help &amp; Info</a></li>
+						<li><a href="$sbRoot/config/general/"><i class="fa fa-"></i>  General</a></li>
+						<li><a href="$sbRoot/config/search/"><i class="fa fa-"></i>  Search Settings</a></li>
+						<li><a href="$sbRoot/config/providers/"><i class="fa fa-"></i>  Search Providers</a></li>
+						<li><a href="$sbRoot/config/subtitles/"><i class="fa fa-"></i>  Subtitles Settings</a></li>
+						<li><a href="$sbRoot/config/postProcessing/"><i class="fa fa-"></i>  Post Processing</a></li>
+						<li><a href="$sbRoot/config/notifications/"><i class="fa fa-"></i>  Notifications</a></li>
 				  </ul>
 			  </li>
 		  </ul>

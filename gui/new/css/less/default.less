@@ -1,6 +1,8 @@
 @import "bootstrap/bootstrap.less";
 @import "bootstrap/variables.less";
 @import "bootstrap/grid.less";
+@import "fontawesome/font-awesome.less";
+@import "base.less";
 
 /***
 * Before header
@@ -25,20 +27,46 @@ body{
 #MainMenu{
 	border-radius: 0px;
 	ul{
-		li.dropdown{
-			padding-right: 7px;
-			>a.dropdown-link{
+		li{
+			&.current>a{
+				color: @green;
 				&:after{
-					content: " ";
-					position: absolute;
-					top: 22px;
-					right: 0px;
-					border-right: 5px solid transparent;
-					border-left: 5px solid transparent;
-					border-top: 5px solid @gray-light;
+					border-top: 5px solid @green !important;
 				}
-				&:hover:after{
-					border-top-color: white;
+			}
+			&.dropdown{
+				padding-right: 7px;
+				a.dropdown-link{
+					padding-right: 25px;
+					&:after{
+						content: " ";
+						position: absolute;
+						top: 22px;
+						right: 10px;
+						border-right: 5px solid transparent;
+						border-left: 5px solid transparent;
+						border-top: 5px solid @gray-light;
+					}
+					&:hover{
+						color: @green;
+						&:after{
+							border-top-color: @green;
+						}
+					}
+				}
+				ul.dropdown-menu{
+					background-color: #333;
+					li{
+						width: 100%;
+						position: relative;
+						>a{
+							color: @gray-light;
+							&:hover{
+								background-color: black;
+								color: @green;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -50,3 +78,5 @@ body{
 		}
 	}
 }
+
+@import "mobile.less";

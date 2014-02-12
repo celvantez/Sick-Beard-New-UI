@@ -15,7 +15,7 @@
 			})
 		}else{ // Else, use hover
 			$(liDropdown).hover(function(){
-				$(this).children(dropdown).toggle();
+				$(this).toggleClass('open'); // Triggers CSS, so no need to actually add anything else here
 			});
 			$(liDropdown).click(function(){
 				window.location = $(this).children(linkLocation).attr('href');
