@@ -4,9 +4,9 @@
 @import "fontawesome/font-awesome.less";
 @import "base.less";
 
-/***
-* Before header
-***/
+/**
+ * Before header
+ */
 
 html{
 	background-color: @light-brown;
@@ -17,66 +17,93 @@ body{
 }
 
 #upgrade-notification{
-
+	.alert;
+	.alert-info;
+	.make-md-column(7);
+	.make-md-column-offset(2);
+	.clearfix;
 }
 
-/***
-* Header
-***/
+/**
+ * #Header
+ */
+#header{
+	width: 100%;
+	float: left;
+}
 
-#MainMenu{
-	border-radius: 0px;
-	ul{
-		li{
-			&.current>a{
-				color: @green;
-				&:after{
-					border-top: 5px solid @green !important;
-				}
-			}
-			&.dropdown{
-				padding-right: 7px;
-				a.dropdown-link{
-					padding-right: 25px;
+	#MainMenu{
+		border-radius: 0px;
+		ul{
+			li{
+				&.current>a{
+					color: @green;
 					&:after{
-						content: " ";
-						position: absolute;
-						top: 22px;
-						right: 10px;
-						border-right: 5px solid transparent;
-						border-left: 5px solid transparent;
-						border-top: 5px solid @gray-light;
+						border-top: 5px solid @green !important;
 					}
-					&:hover{
-						color: @green;
+				}
+				&.dropdown{
+					padding-right: 7px;
+					a.dropdown-link{
+						padding-right: 25px;
 						&:after{
-							border-top-color: @green;
+							content: " ";
+							position: absolute;
+							top: 22px;
+							right: 10px;
+							border-right: 5px solid transparent;
+							border-left: 5px solid transparent;
+							border-top: 5px solid @gray-light;
+						}
+						&:hover{
+							color: @green;
+							&:after{
+								border-top-color: @green;
+							}
 						}
 					}
-				}
-				ul.dropdown-menu{
-					background-color: #333;
-					li{
-						width: 100%;
-						position: relative;
-						>a{
-							color: @gray-light;
-							&:hover{
-								background-color: black;
-								color: @green;
+					ul.dropdown-menu{
+						background-color: #333;
+						li{
+							width: 100%;
+							position: relative;
+							>a{
+								color: @gray-light;
+								&:hover{
+									background-color: black;
+									color: @green;
+								}
 							}
 						}
 					}
 				}
 			}
 		}
-	}
-	#NAVconfig{
-		>a{
-			padding-top: 8px;
-			padding-bottom: 0;
+		#NAVconfig{
+			>a{
+				padding-top: 8px;
+				padding-bottom: 0;
+			}
 		}
 	}
-}
+
+/**
+ * #Content
+ */
+	#SubMenu{
+		float: right;
+		a{
+			.btn;
+			.btn-default;
+		}
+	}
+	h1.header{
+		.make-md-column(9);
+		display: block;
+	}
+	#HomeLayout{
+		.make-md-column(3);
+		margin-top: 45px;
+	}
 
 @import "mobile.less";
